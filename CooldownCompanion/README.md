@@ -62,7 +62,7 @@ pip install --upgrade --force-reinstall pydub
 pip install --upgrade --force-reinstall Pillow
 pip install charset-normalizer
 pip install charset
-
+```
 I hope this Setup will work, but if things go wrong, I wish you the best of luck
 
 ## Distribution
