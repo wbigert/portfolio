@@ -1,4 +1,4 @@
-## Java Game Engine
+# Java Game Engine
 **Author: William Bigert**
 
 **Skills: Java, Java Foundation Libraries (AWT and Swing)**
