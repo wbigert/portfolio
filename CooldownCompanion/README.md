@@ -22,7 +22,7 @@ Personally, I host this Discord Bot on a DigitalOcean droplet running Ubuntu.
 1. The Discord Bot will poll the relevant MongoDB collection for timer documents.
 2. If the timer document indicate that a timer is nearing its end, the Discord Bot will prepare a dynamic text meant to warn the users in the channel. The Discord Bot will then convert the text into speech using Google TTS API and play the resulting mp3 in its connected voice channel.
 3. If the timer of the document has reached its end it is removed from the collection and the Discord Bot will verbally warn that the ability cooldown is now finished (Google TTS API).
-4. Once a clear all document is received, the Discord Bot will clear the entire collection and wait for further instructions.
+4. Once a "clear all documents" instruction is received when a game has ended, the Discord Bot will clear the entire collection and wait for further instructions.
 
 ## Is it cheating?
 Riot Games employees have previously made statements that as long as the timers are started as a consequense of manual action (such as activating a hotkey), it is not considered cheating. For example, you could start a timer on your phone by yourself and it wouldn't be cheating. However, if the client would automatically detect (with for example image recognition) when an opponent uses abilities and automatically start a timer, that would be considered cheating.
