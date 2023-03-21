@@ -3,7 +3,7 @@
 
 **Skills: Java, Java Foundation Libraries (AWT and Swing)**
 
-A 2D game engine that i built during the summer of 2020 with the sole purpose of improving my Java skills.
+A 2D game engine that I built during the summer of 2020 with the sole purpose of improving my Java skills.
 
 ## Features
 #### Levels
