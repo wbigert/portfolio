@@ -6,15 +6,17 @@
 A 2D game engine that I built during the summer of 2020 with the sole purpose of improving my Java skills.
 
 ## Gameplay Demo
-https://user-images.githubusercontent.com/60448436/226496002-a443f061-1a3c-44cb-a44d-f188a20329ae.mp4
+https://user-images.githubusercontent.com/60448436/226497466-596a50e6-ec89-4585-8d30-6dcea4af9a8d.mp4
 
 ## Editor Demo
-https://user-images.githubusercontent.com/60448436/226495976-bc67ab89-1af5-4e3a-a474-a55b4d11f6c3.mp4
+https://user-images.githubusercontent.com/60448436/226497491-9e213739-9352-47b9-a535-66ce0c045c19.mp4
 
 ## Features
+
 #### Levels
 - Levels are built by parsing pixels of PNG images. Each pixel's RGB value will be matched with a block of a certain spritesheet and will be rendered on the screen.
 - There are 3 layers of a level, each with their own PNG image. These 3 layers represent the background, interactible layer, and foreground.
+
 #### Level editing
 - There is a level editor that you can use to create levels. You can switch between available blocks and layers of a level and place them as you see fit. When saved, the editor will convert your level into new PNG images.
 
