@@ -5,10 +5,10 @@
 
 A 2D game engine that I built during the summer of 2020 with the sole purpose of improving my Java skills.
 
-## Gameplay Demo
+## Demo: Gameplay
 https://user-images.githubusercontent.com/60448436/226497466-596a50e6-ec89-4585-8d30-6dcea4af9a8d.mp4
 
-## Editor Demo
+## Demo: Editor
 https://user-images.githubusercontent.com/60448436/226497491-9e213739-9352-47b9-a535-66ce0c045c19.mp4
 
 ## Features
