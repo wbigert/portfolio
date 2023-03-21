@@ -13,7 +13,7 @@ Real-time verbal assistance in the game League of Legends using a Python Client 
 ### Usage
 1. The user can activate hotkeys to track either the flash summoner spell or the ultimate ability of any opposing player. This is done by inserting a timer document into a MongoDB collection which contains the start time and the exact calculated duration of the ability type.
 2. The user will be present in a Discord channel where the accompanied Discord Bot is located and will receive real-time verbal feedback regarding the status of their timers.
-3. The client will also automatically detect if any opponent has purchased a Stopwatch or Zhonya's Hourglass and will verbally warn the users about this fact.
+3. The client will also automatically detect if any opponent has purchased a Stopwatch or Zhonya's Hourglass and will indicate this by inserting a document which the Discord Bot will consume. The Discord Bot then warns the players verbally about this fact.
 4. The client will automatically detect when a game is over, and will signal this to the Discord Bot so that it clears the existing timers.
 
 ## How the Discord Bot works
