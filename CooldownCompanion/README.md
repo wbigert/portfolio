@@ -63,10 +63,10 @@ pip install --upgrade --force-reinstall Pillow
 pip install charset-normalizer
 pip install charset
 ```
-I hope this Setup will work, but if things go wrong, I wish you the best of luck
+I hope this setup will work, but if things go wrong, I wish you the best of luck!
 
 ## Distribution
-The ClientCompact directory contains all of the Client files put into a single Client.py file. Once configured, I recommend you use:
+The client_compact directory contains all of the client files put into a single Client.py file. Once configured, I recommend you use:
 ```
 pyinstaller -F -i python.ico Client.py --uac-admin
 ```
