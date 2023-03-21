@@ -37,5 +37,7 @@ https://user-images.githubusercontent.com/60448436/226495976-bc67ab89-1af5-4e3a-
 - Thrown Coffin animations (sprite sheet by Marcus Gisslén)
 - All other textures and block sprites were obtained from websites providing free game sprite sheets
 
+## Credits
+When making this game, I initially followed several different tutorials to get started which inspired some parts of the code such as the way I create the game thread and the way the [game-loop is structured](https://www.youtube.com/watch?v=ec5BMsJxcdY) with the separation of UPS and FPS. The structure of my game states was also inspired by another developer's Java Game which i studied, but is not available anymore. However, these parts make up a very small portion of the overall code, but was worth mentioning either way!
 
 
