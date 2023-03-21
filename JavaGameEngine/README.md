@@ -5,6 +5,12 @@
 
 A 2D game engine that I built during the summer of 2020 with the sole purpose of improving my Java skills.
 
+## Gameplay Demo
+https://user-images.githubusercontent.com/60448436/226496002-a443f061-1a3c-44cb-a44d-f188a20329ae.mp4
+
+## Editor Demo
+https://user-images.githubusercontent.com/60448436/226495976-bc67ab89-1af5-4e3a-a474-a55b4d11f6c3.mp4
+
 ## Features
 #### Levels
 - Levels are built by parsing pixels of PNG images. Each pixel's RGB value will be matched with a block of a certain spritesheet and will be rendered on the screen.
@@ -30,4 +36,6 @@ A 2D game engine that I built during the summer of 2020 with the sole purpose of
 - Character running animation (sprite sheet by Marcus Gisslén)
 - Thrown Coffin animations (sprite sheet by Marcus Gisslén)
 - All other textures and block sprites were obtained from websites providing free game sprite sheets
+
+
 
