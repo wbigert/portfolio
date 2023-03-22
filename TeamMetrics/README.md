@@ -3,7 +3,7 @@
 
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
  
-A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process. I was the sole responsible developer for building this project.
+A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
  
 ## Demo: Data visualization
 ![alt text](https://github.com/AFlyingRhino/ResumeProjects/blob/main/TeamMetrics/demoGraphs.jpg)
