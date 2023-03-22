@@ -9,12 +9,11 @@ Real-time verbal assistance in the game League of Legends using a Python Client 
 ### Initializing
 1. The client will be run by one or more concurrent users.
 2. Each client will automatically detect when the user enters a game of League of Legends by polling the Riot Games Live Client API.
-3. Once connected, the client will initialize and obtain all relevant runes, champions, cooldowns and summoners spells. Some of this information is scraped from 3rd-party websites such as leagueoflegends.fandom.com and euw.op.gg after obtaining the summoner names of the opposing players present in the game. This is necessary as I don't have the required production API keys to obtain this information live, while other websites do.
+3. Once connected, the client will initialize and obtain all relevant runes, champions, cooldowns and summoners spells. Some of this information is scraped from 3rd-party websites such as leagueoflegends.fandom.com and euw.op.gg. This is necessary as I don't have the required production API keys to obtain some of this information live, while other websites do.
 ### Usage
 1. The user can activate hotkeys to track either the flash summoner spell or the ultimate ability of any opposing player. This is done by inserting a timer document into a MongoDB collection which contains the start time and the exact calculated duration of the ability type.
-2. The user will be present in a Discord channel where the accompanied Discord Bot is located and will receive real-time verbal feedback regarding the status of their timers.
-3. The client will also automatically detect if any opponent has purchased a Stopwatch or Zhonya's Hourglass and will indicate this by inserting a document which the Discord Bot will consume. The Discord Bot then warns the players verbally about this fact.
-4. The client will automatically detect when a game is over, and will signal this to the Discord Bot so that it clears the existing timers.
+2. The client will also automatically detect if any opponent has purchased a Stopwatch or Zhonya's Hourglass and will indicate this by inserting a document which the Discord Bot will consume. The Discord Bot then warns the players verbally about this fact.
+3. The client will automatically detect when a game is over, and will signal this to the Discord Bot so that it clears the existing timers.
 
 ## How the Discord Bot works
 Personally, I host this Discord Bot on a DigitalOcean droplet running Ubuntu.
