@@ -3,7 +3,7 @@
 
 **Skills: Java, Java Foundation Libraries (AWT and Swing)**
 
-A 2D game engine that I built during the summer of 2020 with the sole purpose of improving my Java skills.
+A 2D game engine that I built from scratch using core Java libraries during the summer of 2020 with the sole purpose of improving my Java skills.
 
 ## Demo: Gameplay
 https://user-images.githubusercontent.com/60448436/226497466-596a50e6-ec89-4585-8d30-6dcea4af9a8d.mp4
