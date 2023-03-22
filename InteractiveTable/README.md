@@ -15,7 +15,7 @@ The following can be done interactively with the table.
 - Row deletion
 - Row creation
 
-Each interaction will be staged. All staged interactions can either be commited or reverted using the "Apply or "Revert" buttons respectively. 
+Each interaction will be staged. All staged interactions can either be commited or reverted using the "Apply" or "Revert" buttons respectively. 
 
 When commited, the React-app performs the relevant POST/PUT/DELETE HTTP-requests to the backend.
 
