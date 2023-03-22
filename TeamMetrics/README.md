@@ -60,10 +60,10 @@ Graphs can be generated through the use of the **!graphs** command. Multiple gro
 These are **-i** or **-interval** for time intervals, **-g** or **-group** for groups, **-e** or **-employees** for including extra emplyoees.
 
 Several modules have been implemented that will parse the concerned MongoDB session documents on a per-minute precision and generate the following data packages:
-- **Per weekday hourly time series statistics** (total hours logged per hour for each weekday)
+- **Per weekday hourly time series statistics** (total hours logged per hour of each weekday)
 - **Per day statistics** (total hours logged per weekday in total)
 - **Per hour statistics** (total hours logged per hour in total across all weekdays)
 - **Per week statistics** (total hours logged per week)
-- **Correlation with other employees** (total hours logged at the same time for every other employee included in the report)
+- **Correlation with other employees** (total hours logged that overlap with a specific other employee, for each employee included in the report)
 
 These are then used to plot graphs using Seaborn and MatPlotLibs (see the Demo section), which are then converted into a singular SVG image and eventually posted in the Discord text channel that the command was originally issued in. The image will be accomanied with a report mentioning the number of sessions that were handled, how long it took, and which employees were included in the image.
