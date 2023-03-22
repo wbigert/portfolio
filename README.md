@@ -16,4 +16,4 @@ A 2D game engine that I built from scratch using core Java libraries during the 
 ## [Team Metrics](https://github.com/AFlyingRhino/ResumeProjects/tree/main/TeamMetrics)
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
 
-A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process. I was the sole responsible developer for building this project.
+A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
