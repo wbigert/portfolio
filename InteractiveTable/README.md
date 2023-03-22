@@ -23,7 +23,7 @@ When commited, the React-app performs the relevant POST/PUT/DELETE HTTP-requests
 A backend was built in C# using ASP.NET database first scaffolding of a MariaDB table. The table schema was provided by TellusTalk AB. The scaffolding prepared simple entry points for POST/PUT/DELETE HTTP-requests.
 
 ### Distribution
-I also dockerized the project using Docker Compose, defining services, networks and volumes in a YAML file. The resulting image was deployed to a Kubernetes cluster hosted by TellusTalk AB. 
+I dockerized the project using Docker Compose, defining services, networks and volumes in a YAML file. I deployed the resulting image to a Kubernetes cluster hosted by TellusTalk AB. 
 
 ## NDA (non disclosure agreement)
 This project was built by me during work hours at TellusTalk AB, and as such I cannot disclose the source code.
