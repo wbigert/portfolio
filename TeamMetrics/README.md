@@ -26,7 +26,7 @@ The duration in seconds of this session.
 #### \<date\>
 The Python datetime of when this session was finished (used to generate date interval reports).
 
-The Discord Bot may also create a log message in a dedicated Discord text channel once a session is started or ended if this feature is enabled .
+The Discord Bot may also create a log message in a dedicated Discord text channel once a session is started or ended if this feature is enabled.
 
 ## Session Logging Assistance
 Once a session of a registered emploee is completed, that employee will receive a direct message from the Discord Bot containing the session duration as well as a link to that employee's Jira time tracking page (see the **Demo** section). This simplifies the process of employees with per-hour contracts so that they don't have to time their sessions themselves.
