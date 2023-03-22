@@ -28,20 +28,23 @@ The Python datetime of when this session was finished (used to generate date int
 
 The Discord Bot may also create a log message in a dedicated Discord text channel once a session is started or ended if this feature is enabled .
 
+## Session Logging Assistance
+Once a session of a registered emploee is completed, that employee will receive a direct message from the Discord Bot containing the session duration as well as a link to that employee's Jira time tracking page (see the **Demo** section). This simplifies the process of employees with per-hour contracts so that they don't have to time their sessions themselves.
+
 ## Reports
 Reports can be generated through the use of the **!reports** command. The report will show the total time logged of all employees concerned (see the **Demo** section). Command **flags** can be added to the command to customize it. See section **Flags** for more information. 
 
 ## Graphs
-Graphs can be generated through the use of the **!graphs** command. Multiple groups of people and any combination of employees can be selected to be included and compared in these graphs. Command **Flags** can be added to the command to customize it. See section **Flags** for more information.
+Graphs can be generated through the use of the **!graphs** command. Multiple groups of people and any combination of employees can be selected to be included and compared in these graphs. Command **flags** can be added to the command to customize it. See section **Flags** for more information.
 
-Several modules have been implemented that will parse the concerned MongoDB session documents on a per-minute precision and generate the following data packages:
+Several modules have been implemented that will parse the concerned MongoDB session documents on a per-minute precision and generate the following data frames:
 - **Per weekday hourly time series statistics** (total hours logged per hour of each weekday)
 - **Per day statistics** (total hours logged per weekday in total)
 - **Per hour statistics** (total hours logged per hour in total across all weekdays)
 - **Per week statistics** (total hours logged per week)
 - **Correlation with other employees** (total hours logged that overlap with a specific other employee, for each employee included in the report)
 
-These are then used to plot graphs using Seaborn and MatPlotLibs (see the **Demo** section), which are then converted into a singular SVG image and eventually posted in the Discord text channel that the command was originally issued in. The image will be accomanied with a report mentioning the number of sessions that were handled, how long it took, and which employees were included in the image.
+These are then used to plot graphs using Seaborn and MatPlotLib (see the **Demo** section), which are then converted into a singular SVG image and eventually posted in the Discord text channel that the command was originally issued in. The image will be accomanied with a report mentioning the number of sessions that were handled, how long it took, and which employees were included in the image.
 
 ## Flags
 All commands can be customized by adding flags.
