@@ -10,24 +10,25 @@ import urllib3
 import time
 import os
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def get_database():
     import certifi
     ca = certifi.where()
     client = MongoClient(os.environ['CONNECTION_STRING'], tlsCAFile=ca)
-    return client['league_tools']
+    return client[os.environ['DB_NAME']]
     
 def insert_one(item):
-    dbname = get_database()
-    collection_name = dbname["league_tracker"]
+    db = get_database()
+    collection_name = db["league_tracker"]
     collection_name.insert_one(item)
 
 def get_all():
-  dbname = get_database()
+  db = get_database()
   # Create a new collection
-  collection_name = dbname["league_tracker"]
+  collection_name = db["league_tracker"]
 
   item_details = collection_name.find()
   array = list(item_details)
