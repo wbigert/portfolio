@@ -6,13 +6,13 @@
 A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
  
 ## Demo: Data visualization
-![alt text](https://github.com/AFlyingRhino/ResumeProjects/blob/main/TeamMetrics/demo/demoGraphs.jpg)
+![alt text](https://github.com/wbigert/portfolio/blob/main/team-metrics/demo/demoGraphs.jpg)
  
 ## Demo: Report
-![alt text]( https://github.com/AFlyingRhino/ResumeProjects/blob/main/TeamMetrics/demo/demoReport.png)
+![alt text]( https://github.com/wbigert/portfolio/blob/main/team-metrics/demo/demoReport.png)
 
 ## Demo: Session logging assistance
-![alt text]( https://github.com/AFlyingRhino/ResumeProjects/blob/main/TeamMetrics/demo/demoAssistant.png)
+![alt text]( https://github.com/wbigert/portfolio/blob/main/team-metrics/demo/demoAssistant.png)
  
 ## Data Collection
 The Discord Bot will repeatedly poll all relevant voice channels of registered servers and check for active sessions of registered employees. If an ongoing session is ended, a session document will be inserted into a MongoDB collection containing the following features:
