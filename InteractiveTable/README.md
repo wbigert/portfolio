@@ -26,4 +26,4 @@ A backend was built in C# using ASP.NET database first scaffolding of a MariaDB 
 I dockerized the project using Docker Compose, defining services, networks and volumes in a YAML file. I deployed the resulting image to a Kubernetes cluster hosted by TellusTalk AB. 
 
 ## NDA (non disclosure agreement)
-This project was built by me during work hours at TellusTalk AB, and as such I cannot disclose the source code.
+For this particular project which was built during work hours at TellusTalk AB, I am not able to share the code.
