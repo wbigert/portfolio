@@ -6,7 +6,7 @@
 Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
 
 ## Illustration
-![alt](https://github.com/wbigert/Portfolio/blob/main/CooldownCompanion/demo/illustration.png)
+![alt](https://github.com/wbigert/portfolio/blob/main/cooldown-companion/demo/illustration.png)
 
 ## How the Python Client works
 ### Initializing
