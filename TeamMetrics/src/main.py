@@ -5,6 +5,8 @@ from utilities import get_current_time_string, auth_check
 from commands import add_employee, remove_employee, add_jira, send_report, send_self_report, print_employees, send_charts
 from backend import get_all
 from surveillance import handle_finished_sessions, handle_new_sessions, handle_ongoing_sessions
+from dotenv import load_dotenv
+load_dotenv()
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)

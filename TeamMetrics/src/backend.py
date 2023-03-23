@@ -3,6 +3,9 @@ import pymongo
 import os
 import certifi
 import time
+from dotenv import load_dotenv
+load_dotenv()
+
 ca = certifi.where()
 MAX_AUTO_RECONNECT_ATTEMPTS = 30
 def get_database():
