@@ -1,6 +1,7 @@
 from utilities import get_current_time, get_employee_session_time, seconds_to_string
 from backend import insert_one
 import discord
+
 def get_all_members(client, guilds_to_track):
   members = []
   for guild_id in guilds_to_track:
@@ -12,6 +13,7 @@ def get_all_members(client, guilds_to_track):
       for member in channel.members:
         members.append(member)
   return members
+
 async def handle_ongoing_sessions(active_users_tuples, employees, client, guilds_to_track):
   old_active_users_tuples = active_users_tuples
   new_active_members = get_all_members(client, guilds_to_track)
@@ -28,17 +30,14 @@ async def handle_ongoing_sessions(active_users_tuples, employees, client, guilds
         await old_user_tuple[2].edit(content=f"Ongoing session by {name}. Started: {started}. Duration: {session_time_stringified}.")
         
 async def handle_new_sessions(active_users_tuples, report_channels, employees, client, guilds_to_track):
-  
   old_active_users_tuples = active_users_tuples
   new_active_members = get_all_members(client, guilds_to_track)
   for new_active_member in new_active_members:
-      
     employee = employees.get(new_active_member.id)
     if not employee:
       continue 
     
     name = employee['name']
-    
     already_handled = False
     for old_user_tuple in old_active_users_tuples:
       if new_active_member == old_user_tuple[0]:
@@ -66,14 +65,11 @@ async def handle_new_sessions(active_users_tuples, report_channels, employees, c
               
           
 async def handle_finished_sessions(active_users_tuples, employees, client, guilds_to_track):
-  
   old_active_users_tuples = active_users_tuples
   new_active_members = get_all_members(client, guilds_to_track)
   
   for old_user_tuple in old_active_users_tuples:
-
       old_member = old_user_tuple[0]
-    
       employee = employees.get(old_member.id)
       if not employee:
         continue
