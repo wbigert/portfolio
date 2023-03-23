@@ -13,9 +13,6 @@ A data collection tool with report generation and data visualization. Assists de
 
 ## Demo: Session logging assistance
 ![alt text]( https://github.com/AFlyingRhino/ResumeProjects/blob/main/TeamMetrics/demo/demoAssistant.png)
-
-## NDA (non disclosure agreement)
-This project was built by me during work hours at TellusTalk AB, and as such I cannot disclose the source code.
  
 ## Data Collection
 The Discord Bot will repeatedly poll all relevant voice channels of registered servers and check for active sessions of registered employees. If an ongoing session is ended, a session document will be inserted into a MongoDB collection containing the following features:
@@ -69,3 +66,32 @@ Singular employees can be appended to the report by adding a **-e** or **-employ
 ```
 
 The above would request a report for the time interval 2022/01/01 to 2023/01/01 for the employees in the UX-Designers group as well as for an extra employee specified by <@someones_discord_id>.
+
+## Employee management commands
+
+### !add employee \<id\> \<group\> \<name\>
+Adds an employee to the 'employees' collection.
+
+Example usage: 
+```
+!add employee 149253253014487041 developers Billy Boy
+```
+
+### !add jira \<jira_url\>
+Updates the jira_url attribute of the employee document linked to the user sending this command.
+
+Example usage: 
+```
+!add jira https://studentkuvos.atlassian.net/jira/software/c/projects/TRACK/boards/6
+```
+
+### !remove employee \<id\>
+Removes the employee linked to this Discord user id.
+
+Example usage: 
+```
+!remove employee 149253253014487041
+```
+
+## Setup
+To set this bot up you will need to edit the .env file with your own **DISCORD_TOKEN**, **CONNECTION_STRING**, and **DB_NAME**. Where the latter two concern your MongoDB cluster and database. The database needs an 'employees' collection as well as a 'session_logs' collection to work properly. Further, edit the appData dictionary in main.py and add your server id in 'guilds_to_track', your discord user ids in 'authorized_users', and your preferred employee groups in 'allowed_groups', as well as which channel id the bot should mention ongoing sessions in for each group name in 'report_channels'.
