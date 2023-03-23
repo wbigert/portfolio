@@ -3,7 +3,7 @@ This repo contains information about a selection of coding projects that I want 
 
 # Projects
 
-## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/TeamMetrics) (Code NDA)
+## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/TeamMetrics)
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
 
 A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
@@ -18,7 +18,7 @@ Real-time verbal assistance in the game League of Legends using a Python Client 
 
 A 2D game engine that I built from scratch using core Java libraries during the summer of 2020 with the sole purpose of improving my Java skills.
 
-## [Interactive Table](https://github.com/wbigert/portfolio/tree/main/InteractiveTable) (Code NDA)
+## [Interactive Table](https://github.com/wbigert/portfolio/tree/main/InteractiveTable)
 **Skills: React, JavaScript, HTML, CSS, C#, ASP.NET (database first), MariaDB**
 
 A user-friendly way to interact with a database table.
