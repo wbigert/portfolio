@@ -46,6 +46,7 @@ You will have to host the Discord Bot yourself. Additionally, you will have to h
 
 Some dependencies that you need installed are:
 1. ffmpeg (to change mp3 output volume, probably overkill, but that's what I used)
+
 This can be installed easily using:
 ```
 pip install ffmpeg-downloader
