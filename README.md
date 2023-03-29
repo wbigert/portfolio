@@ -18,11 +18,6 @@ Real-time verbal assistance in the game League of Legends using a Python Client 
 
 A 2D game engine that I built from scratch using core Java libraries during the summer of 2020 with the sole purpose of improving my Java skills.
 
-## [Interactive Table](https://github.com/wbigert/portfolio/tree/main/interactive-table)
-**Skills: React, JavaScript, HTML, CSS, C#, ASP.NET (database first), MariaDB**
-
-A user-friendly way to interact with a database table.
-
 
 
 
