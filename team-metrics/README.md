@@ -3,7 +3,7 @@
 
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
  
-A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
+A data collection tool with report generation and data visualization I built during my time at TellusTalk AB. Assists developers and interns working remotely by simplifying the session logging process.
  
 ## Demo: Data visualization
 ![alt text](https://github.com/wbigert/portfolio/blob/main/team-metrics/demo/demoGraphs.jpg)
