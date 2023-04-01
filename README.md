@@ -6,7 +6,7 @@ This repo contains information about a selection of coding projects that I want 
 ## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/team-metrics)
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
 
-A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
+A data collection tool with report generation and data visualization I built during my time at TellusTalk AB. Assists developers and interns working remotely by simplifying the session logging process.
 
 ## [Cooldown Companion](https://github.com/wbigert/portfolio/tree/main/cooldown-companion)
 **Skills: Python, BeautifulSoup, Google Cloud API, MongoDB, Discord.py**
