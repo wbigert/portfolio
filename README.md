@@ -11,7 +11,7 @@ A data collection tool with report generation and data visualization I built dur
 ## [Cooldown Companion](https://github.com/wbigert/portfolio/tree/main/cooldown-companion)
 **Skills: Python, BeautifulSoup, Google Cloud API, MongoDB, Discord.py**
 
-Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
+Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. I built this for fun and as a way for me and my friends to improve our  performance while playing the game together. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
 
 ## [Java Game Engine](https://github.com/wbigert/portfolio/tree/main/java-game-engine)
 **Skills: Java, Java Foundation Libraries (AWT and Swing)**
