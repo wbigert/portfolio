@@ -1,9 +1,9 @@
 # Nexus
-**Author: William Bigert**
+Author: **William Bigert**
 
-**Skills: React, TypeScript, CSS, HTML, Bootstrap**
+Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
-**Link: <https://wbigert-nexus.com>** (This is a Snapshot from 2023-04-10)
+**<https://wbigert-nexus.com>**
 
 Use the following credentials to login and try the Admin features of the website:
 - Email: **william-b@studs.se**
