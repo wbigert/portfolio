@@ -3,25 +3,20 @@ This repo contains information about a selection of coding projects that I want 
 
 # Projects
 
-## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/TeamMetrics)
+## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/team-metrics) [Project for TellusTalk AB]
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
 
-A data collection tool with report generation and data visualization. Assists developers and interns working remotely by simplifying the session logging process.
+A data collection tool with report generation and data visualization I built during my time at TellusTalk AB. Assists developers and interns working remotely by simplifying the session logging process.
 
-## [Cooldown Companion](https://github.com/wbigert/portfolio/tree/main/CooldownCompanion)
+## [Cooldown Companion](https://github.com/wbigert/portfolio/tree/main/cooldown-companion) [Hobby project]
 **Skills: Python, BeautifulSoup, Google Cloud API, MongoDB, Discord.py**
 
-Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
+Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. I built this for fun and as a way for me and my friends to improve our  performance while playing the game together. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
 
-## [Java Game Engine](https://github.com/wbigert/portfolio/tree/main/JavaGameEngine)
+## [Java Game Engine](https://github.com/wbigert/portfolio/tree/main/java-game-engine) [Hobby project]
 **Skills: Java, Java Foundation Libraries (AWT and Swing)**
 
 A 2D game engine that I built from scratch using core Java libraries during the summer of 2020 with the sole purpose of improving my Java skills.
-
-## [Interactive Table](https://github.com/wbigert/portfolio/tree/main/InteractiveTable)
-**Skills: React, JavaScript, HTML, CSS, C#, ASP.NET (database first), MariaDB**
-
-A user-friendly way to interact with a database table.
 
 
 
