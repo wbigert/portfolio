@@ -1,7 +1,7 @@
 # Team Metrics
-**Author: William Bigert**
+Author: **William Bigert**
 
-**Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
+Skills: **Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
  
 A data collection tool with report generation and data visualization I built during my time at TellusTalk AB. Assists developers and interns working remotely by simplifying the session logging process.
  
