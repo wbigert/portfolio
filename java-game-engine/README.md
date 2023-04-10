@@ -1,7 +1,7 @@
 # Java Game Engine
-**Author: William Bigert**
+Author: **William Bigert**
 
-**Skills: Java, Java Foundation Libraries (AWT and Swing)**
+Skills: **Java, Java Foundation Libraries (AWT and Swing)**
 
 A 2D game engine that I built from scratch using core Java libraries during the summer of 2020 with the sole purpose of improving my Java skills.
 
