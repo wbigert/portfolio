@@ -1,7 +1,12 @@
 # Portfolio 
-This repo contains information about a selection of coding projects that I want to highlight. These are all solo projects, meaning that there was essentially no collaboration with other people. Demonstrations and information about each project is included in their respective directories.
+Welcome to my portfolio! Here, you'll find a selection of coding projects that I have personally developed and brought to life. While I've had the pleasure of collaborating with talented individuals such as UX designers or using existing APIs in some of these projects, all the code showcased here is solely my own work (with few exceptions). For more information and demonstrations, please visit the respective directories of each project.
 
 # Projects
+
+## [Nexus](https://github.com/wbigert/portfolio/tree/main/nexus) [Project for Studs 2023]
+**Skills: React, TypeScript, CSS, HTML, Bootstrap**
+
+The new Studs website as of 2023. As member of IT in KTH Studs 2023, I picked the rather ambitious project of creating a new website using modern libraries such as **React 18.2** and **Vite 4.0.1**. I collaborated with the UX-designers of Studs 2023 and refurbished the backend API built by previous generations of Studs.
 
 ## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/team-metrics) [Project for TellusTalk AB]
 **Skills: Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
