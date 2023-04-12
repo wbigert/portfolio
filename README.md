@@ -1,5 +1,5 @@
 # Portfolio 
-Welcome to my portfolio! Here, you'll find a selection of coding projects that I have personally developed and brought to life. 
+Welcome to my portfolio! Here, you'll find a selection of coding projects that I have personally developed. 
 
 While I've had the pleasure of collaborating with individuals such as UX designers or using existing APIs in some of these projects, all the code showcased here is solely my own work (with few exceptions). For more information and demonstrations, please visit the respective directories of each project.
 
