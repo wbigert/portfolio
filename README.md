@@ -18,7 +18,7 @@ A 2D game engine that I built from scratch using core Java libraries during the 
 ## [Nexus](https://github.com/wbigert/portfolio/tree/main/nexus) [Project for Studs 2023]
 Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
-The new Studs website as of 2023. As member of IT in KTH Studs 2023, I picked the rather ambitious project of creating a new website using modern libraries such as **React 18.2** and **Vite 4.0.1**. While building this project, I collaborated with the UX-designers of Studs 2023 and refurbished the backend API built by previous generations of Studs.
+The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided on creating a new website using modern libraries such as **React 18.2** and **Vite 4.0.1**. While building this project, I collaborated with the UX-designers of Studs 2023 and refurbished the backend API built by previous generations of Studs.
 
 ## [Team Metrics](https://github.com/wbigert/portfolio/tree/main/team-metrics) [Project for TellusTalk AB]
 Skills: **Python, NumPy, Pandas, PIL, MatPlotLib, Seaborn, MongoDB, Discord.py**
