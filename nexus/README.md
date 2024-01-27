@@ -3,7 +3,7 @@ Author: **William Bigert**
 
 Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
-**<https://nexus.wbigert.com>**
+**~~<https://nexus.wbigert.com>~~** (I turned off the backend hosting to save $$$ for now, so it's not functional at the moment)
 
 Use the following credentials to login and try the Admin features of the website:
 - Email: **william-b@studs.se**
