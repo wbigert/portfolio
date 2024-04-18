@@ -8,7 +8,9 @@ Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 You can check out <https://studs.se> instead which is the same website with some modifications/additions made by next year's Studs members.
 
 ~~Use the following credentials to login and try the Admin features of the website:~~
+
 ~~- Email: **william-b@studs.se**~~
+
 ~~- Password: **portfolio**~~
 
 The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided to create a new website from scratch\* using modern libraries such as **React 18.2** and **Vite 4.0.1**. I used TypeScript and Bootstrap to ensure that future generations of Studs would have an easy time understanding the project.
