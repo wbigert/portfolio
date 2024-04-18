@@ -5,7 +5,9 @@ Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
 **~~<https://nexus.wbigert.com>~~** (I turned off the hosting to save $$$ for now, so it's not functional at the moment)
 
-You can check out <https://studs.se> instead which is the same website with some modifications/additions made by next year's Studs members.
+You can check out <https://studs.se> instead which is the same website with additions/modifications/improvements made by next year's Studs members.
+
+For the Studs repo, see <https://github.com/studieresan/nexus>.
 
 ~~Use the following credentials to login and try the Admin features of the website:~~
 
