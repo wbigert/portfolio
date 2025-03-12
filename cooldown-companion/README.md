@@ -3,7 +3,7 @@ Author: **William Bigert**
 
 Skills: **Python, BeautifulSoup, Google Cloud API, MongoDB, DigitalOcean (cloud hosting), Discord.py, various Riot Games APIs**
 
-Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
+Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel. It calculates exact cooldowns of summoner spells and ultimate abilities, taking into account things like ability levels, items, runes and masteries through web scraping and API calls.
 
 ## Illustration
 ![alt](https://github.com/wbigert/portfolio/blob/main/cooldown-companion/demo/illustration.png)
