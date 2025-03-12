@@ -8,7 +8,7 @@ While I've had the pleasure of collaborating with individuals such as UX designe
 ## [Cooldown Companion](https://github.com/wbigert/portfolio/tree/main/cooldown-companion) [Hobby project]
 Skills: **Python, BeautifulSoup, Google Cloud API, MongoDB, Discord.py**
 
-Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. I built this for fun and as a way for me and my friends to improve our  performance while playing the game together. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel.
+Real-time verbal assistance in the game League of Legends using a Python Client and a Discord Bot. I built this for fun and as a way for me and my friends to improve our  performance while playing the game together. It can be used simultaneously by all players in your team, as long as you are in the same Discord Voice channel. It calculates exact cooldowns of summoner spells and ultimate abilities, taking into account things like ability levels, items, runes and masteries through web scraping and API calls.
 
 ## [Java Game Engine](https://github.com/wbigert/portfolio/tree/main/java-game-engine) [Hobby project]
 Skills: **Java, Java Foundation Libraries (AWT and Swing)**
