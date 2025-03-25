@@ -17,6 +17,8 @@ Below are demos of the website as of 2025-03-25. The demo differ slighly from ho
 
 https://github.com/user-attachments/assets/fdd77a3c-3aef-414b-ab1b-e3b008f12abe
 
+https://github.com/user-attachments/assets/fe184533-7990-49e3-b8fd-0d9f02975e58
+
 ## Demo: Responsiveness (2025-03-25)
 https://github.com/user-attachments/assets/1b79ffac-a1c7-4375-a48a-48231eb254b9
 
