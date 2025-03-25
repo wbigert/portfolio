@@ -3,21 +3,27 @@ Author: **William Bigert**
 
 Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
-**~~<https://nexus.wbigert.com>~~** (I turned off the hosting to save $$$ for now, so it's not functional at the moment)
-
-You can check out <https://studs.se> instead which is the same website with additions/modifications/improvements made by next year's Studs members.
-
-For the Studs repo, see <https://github.com/studieresan/nexus>.
-
-~~Use the following credentials to login and try the Admin features of the website:~~
-
-~~- Email: **william-b@studs.se**~~
-
-~~- Password: **portfolio**~~
-
 The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided to create a new website from scratch\* using modern libraries such as **React 18.2** and **Vite 4.0.1**. I used TypeScript and Bootstrap to ensure that future generations of Studs would have an easy time understanding the project.
 
 \* *The api.js file containing graphql queries was reused and refurbished from a different project. The same goes for the useModalManager.ts hook.*
+
+You can check out <https://studs.se> which is the same website with additions/modifications/improvements made by next year's Studs members.
+
+For the Studs repo, see <https://github.com/studieresan/nexus>.
+
+Below are demos of the website as of 2025-03-25. The demo differ slighly from how it looked when I left studs. The color scheme is different, the front page graphic has been changed, the section breaker graphic is different, and the Studs logo is new. However, everything else (from what I can tell) is still the same, and 86% of the project contributions were still made by me.
+
+## Demo: Website Outsider Perspective (2025-03-25)
+
+https://github.com/user-attachments/assets/fdd77a3c-3aef-414b-ab1b-e3b008f12abe
+
+## Demo: Responsiveness (2025-03-25)
+https://github.com/user-attachments/assets/1b79ffac-a1c7-4375-a48a-48231eb254b9
+
+https://github.com/user-attachments/assets/6e1402fa-fe65-4bfd-970b-9abb45a32204
+
+## Ease of Use
+I implemented an intuitive GUI for administrators to add/edit/remove members, events, and blog posts (not shown in demo however, since I don't have Admin access anymore after being off-boarded). Users are given roles that automatically link their portraits to the appropriate parts of the webpage. For example, group managers automatically appear on the studs.se/groups page, making it easy for future Studs years to just add the new members, assign them their respective roles, and have the website automatically update accordingly without having to change much manually.
 
 ### Design
 After I implemented the core functionality of the website and proposed an initial design, the UX-designers of Studs 2023 improved it in Figma by giving the **Logo**, **Home page**, **Navbar**, **Footer**, **Buttons** and **Login page** a more personalized design, alongside other design improvements. I then implemented this new design and made responsive versions of it.
