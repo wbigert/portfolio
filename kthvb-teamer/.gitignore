@@ -1,0 +1,8 @@
+# .gitignore
+
+# ignore .env file
+.env
+logfile.txt
+
+#pycache
+__pycache__/
