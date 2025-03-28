@@ -1,0 +1,13 @@
+.navbar {
+  color: white;
+  font-weight: 300;
+  font-size: larger;
+  cursor: pointer;
+  transition: opacity 0.25s;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.navbar:hover {
+  opacity: 0.8;
+}

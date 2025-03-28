@@ -1,0 +1,28 @@
+
+.sectionHeader:hover {
+  background-color: rgb(207, 207, 207);
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out 0s;
+}
+.sectionHeader {
+  transition: background-color 0.1s ease-in-out 0s;
+}
+
+.logoDeleteIcon {
+  color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transition: color 0.1s ease-in-out 0s, background-color 0.1s ease-in-out 0s;
+}
+
+.logoDeleteIcon:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(207, 207, 207);
+}
+
+.logoImage {
+  transition: opacity 0.1s ease-in-out 0s;
+}
+
+.option {
+  transition: opacity 0.1s ease-in-out 0s;
+}

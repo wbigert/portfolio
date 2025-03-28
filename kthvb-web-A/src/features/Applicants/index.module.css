@@ -1,0 +1,10 @@
+.applicantTableRow {
+  cursor: pointer;
+  transition: 0.1s;
+
+}
+
+.applicantTableRow:hover {
+  opacity: 0.7;
+  background-color: #f5f5f5;
+}
