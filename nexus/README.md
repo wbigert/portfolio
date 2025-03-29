@@ -11,7 +11,7 @@ You can check out <https://studs.se> which is the same website with additions/mo
 
 For the Studs repo, see <https://github.com/studieresan/nexus>.
 
-Below are demos of the website as of 2025-03-25. The demo differ slighly from how it looked when I left studs. The color scheme is different, the front page graphic has been changed, the section breaker graphic is different, and the Studs logo is new. However, everything else (from what I can tell) is still the same, and 86% of the project contributions were still made by me.
+Below are demos of the website as of 2025-03-25. The demo differ slightly from how it looked when I left studs. The color scheme is different, the front page graphic has been changed, the section breaker graphic is different, and the Studs logo is new. However, everything else (from what I can tell) is still the same, and 86% of the project contributions were still made by me.
 
 ## Demo: Website Outsider Perspective (2025-03-25)
 
