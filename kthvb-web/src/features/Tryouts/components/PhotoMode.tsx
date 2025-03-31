@@ -9,7 +9,6 @@ import { Button, Form } from "react-bootstrap";
 import { useEffect, useState, useRef, useContext } from "react";
 import { TryoutDay } from "@/models/TryoutDays";
 import { AddedImage } from "@/features/UserModal/components/AddedImage";
-import { uploadImage } from "@/requests/api";
 import { HandleInstructionsContext } from "@/context";
 import { IoPersonSharp, IoReturnUpBackSharp } from "react-icons/io5";
 import { AiOutlineFileImage } from "react-icons/ai";
@@ -76,13 +75,14 @@ export default function PhotoMode({ appData, handleModals, setMode, selectedTryo
     if (!files) {
       return
     }
-    await uploadImage(files[0]).then(url => {
-      setApplicantPicture(url)
-      handleInstructions('updateApplicant', { applicant: { ...selectedApplicant, picture: url }, tryout_id: appData.tryout_id })
-    })
-    if (addPictureRef.current) {
-      addPictureRef.current.value = ''
-    }
+    throw new Error('No API calls in tech demo!')
+    // await uploadImage(files[0]).then(url => {
+    //   setApplicantPicture(url)
+    //   handleInstructions('updateApplicant', { applicant: { ...selectedApplicant, picture: url }, tryout_id: appData.tryout_id })
+    // })
+    // if (addPictureRef.current) {
+    //   addPictureRef.current.value = ''
+    // }
   }
 
   if (selectedApplicant) {

@@ -1,4 +1,4 @@
-import { uploadImage } from '@/requests/api'
+// import { uploadImage } from '@/requests/api'
 import { useEffect, useRef, useState } from 'react'
 import { Button, FloatingLabel, Form, FormControl, Modal } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
@@ -35,7 +35,6 @@ export default function EditUser ({ modal, data, appData, handleSubmit }: EditUs
       github: '',
       phone: '',
       picture: '',
-      allergies: '',
       master: '',
       permissions: []
     },
@@ -61,7 +60,6 @@ export default function EditUser ({ modal, data, appData, handleSubmit }: EditUs
           github: info.github || startUser.info.github,
           phone: info.phone || startUser.info.phone,
           picture: info.picture || startUser.info.picture,
-          allergies: info.allergies || startUser.info.allergies,
           master: info.master || startUser.info.master,
           permissions: info.permissions || startUser.info.permissions,
         },
@@ -76,37 +74,38 @@ export default function EditUser ({ modal, data, appData, handleSubmit }: EditUs
   }
 
   async function handleChange(e: React.ChangeEvent<HTMLElement>) {
-    if (e.target instanceof HTMLInputElement) {
-      if (e.target.name === 'picture' && e.target.files !== null && e.target.files.length > 0) {
-        await uploadImage(e.target.files[0]).then(url => {
-          setFormData({ ...formData, info: { ...formData.info, picture: url } })
-        })
-        if (addFrontImageRef.current) {
-          addFrontImageRef.current.value = ''
-        }
-      } else {
-        const { name, value } = e.target;
-        if (Object.keys(formData.info).includes(name)) {
-          setFormData({ ...formData, info: { ...formData.info, [name]: value } });
-        } else {
-          setFormData({ ...formData, [name]: value });
-        }
-      }
-    } else if (e.target instanceof HTMLTextAreaElement) {
-      const { name, value } = e.target;
-      if (Object.keys(formData.info).includes(name)) {
-        setFormData({ ...formData, info: { ...formData.info, [name]: value } });
-      } else {
-        setFormData({ ...formData, [name]: value });
-      }
-    } else if (e.target instanceof HTMLSelectElement) {
-      const { name, value } = e.target;
-      if (name === 'role') {
-        setFormData({ ...formData, info: { ...formData.info, role: value as UserRole } });
-      } else {
-        setFormData({ ...formData, [name]: parseInt(value, 10) });
-      }
-    }
+    throw new Error('No API calls in tech demo!')
+    // if (e.target instanceof HTMLInputElement) {
+    //   if (e.target.name === 'picture' && e.target.files !== null && e.target.files.length > 0) {
+    //     await uploadImage(e.target.files[0]).then(url => {
+    //       setFormData({ ...formData, info: { ...formData.info, picture: url } })
+    //     })
+    //     if (addFrontImageRef.current) {
+    //       addFrontImageRef.current.value = ''
+    //     }
+    //   } else {
+    //     const { name, value } = e.target;
+    //     if (Object.keys(formData.info).includes(name)) {
+    //       setFormData({ ...formData, info: { ...formData.info, [name]: value } });
+    //     } else {
+    //       setFormData({ ...formData, [name]: value });
+    //     }
+    //   }
+    // } else if (e.target instanceof HTMLTextAreaElement) {
+    //   const { name, value } = e.target;
+    //   if (Object.keys(formData.info).includes(name)) {
+    //     setFormData({ ...formData, info: { ...formData.info, [name]: value } });
+    //   } else {
+    //     setFormData({ ...formData, [name]: value });
+    //   }
+    // } else if (e.target instanceof HTMLSelectElement) {
+    //   const { name, value } = e.target;
+    //   if (name === 'role') {
+    //     setFormData({ ...formData, info: { ...formData.info, role: value as UserRole } });
+    //   } else {
+    //     setFormData({ ...formData, [name]: parseInt(value, 10) });
+    //   }
+    // }
   }
 
   function handleCheckboxChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -208,11 +207,6 @@ export default function EditUser ({ modal, data, appData, handleSubmit }: EditUs
             <Form.Group className='mb-3' controlId='formGitHub'>
               <FloatingLabel label={t('editUser.label.github')}>
                 <Form.Control type='text' placeholder={t('editUser.label.github')} name='github' value={formData.info.github} onChange={(e) => handleChange(e)} />
-              </FloatingLabel>
-            </Form.Group>
-            <Form.Group className='mb-3' controlId='formAllergies'>
-              <FloatingLabel label={t('editUser.label.allergies')}>
-                <Form.Control as='textarea' type='text' name='allergies' value={formData.info.allergies} onChange={(e) => handleChange(e)} style={{ height: '100px' }} />
               </FloatingLabel>
             </Form.Group>
             <Form.Group className='mb-3' controlId='formMaster'>

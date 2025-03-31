@@ -6,7 +6,7 @@ export interface User {
   tokens?: string[]
 }
 
-export type UserInfo = MiscInfo
+export type UserInfo = KthInfo
 
 export enum BoardPosition {
   None = 'none',
@@ -24,7 +24,7 @@ export enum BoardPosition {
   TeamCaptainWomen = 'captain_women'
 }
 
-export interface MiscInfo {
+export interface KthInfo {
   readonly boardPosition: BoardPosition
   readonly email: string
   readonly phone?: string

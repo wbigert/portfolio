@@ -8,7 +8,6 @@ import ApplicantGroups from "./ApplicantGroups"
 import { Button, FloatingLabel, Form } from "react-bootstrap"
 import { AddedImage } from "@/features/UserModal/components/AddedImage"
 import { useContext, useEffect, useRef, useState } from "react"
-import { uploadImage } from "@/requests/api"
 import { IApplicantGroup } from "@/models/ApplicantGroup"
 import { Comment } from "@/models/Comment"
 import EditApplicantComments from "./EditApplicantComments"
@@ -76,12 +75,13 @@ export default function EditApplicant({ appData, applicant, handleModalClose }: 
     console.log(name, value, files);
 
     if (name === 'picture' && files !== null && files.length > 0) {
-      await uploadImage(files[0]).then(url => {
-        setFormData({ ...formData, picture: url })
-      })
-      if (addFrontImageRef.current) {
-        addFrontImageRef.current.value = ''
-      }
+      throw new Error('No API calls in tech demo!')
+      // await uploadImage(files[0]).then(url => {
+      //   setFormData({ ...formData, picture: url })
+      // })
+      // if (addFrontImageRef.current) {
+      //   addFrontImageRef.current.value = ''
+      // }
     } else {
       setFormData({ ...formData, [name]: value })
     }

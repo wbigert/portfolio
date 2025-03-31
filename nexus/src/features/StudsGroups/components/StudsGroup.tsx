@@ -71,7 +71,7 @@ export default function StudsGroup ({ handleClick, showGroup, group, groupIndex 
             }}
             style={{ cursor: 'pointer' }}
           >
-            <h2 className='fw-normal'>{group.title}</h2>
+            <h2 className='fw-light d-flex'>{group.title}</h2>
                 &nbsp;
             <div className='d-flex justify-content-center align-items-center'>
               {showGroup[groupIndex] ? <BiChevronUp size={30} /> : <BiChevronDown size={30} />}
@@ -79,7 +79,7 @@ export default function StudsGroup ({ handleClick, showGroup, group, groupIndex 
           </div>
           <Collapse in={showGroup[groupIndex]}>
             <div>
-              <div className={`fw-light ${getDescriptionSize(windowWidth)}`}>{group.description}</div>
+              <div className={`fs-5`}>{group.description}</div>
               <div className='d-flex'>
                 {masterContact()}
               </div>

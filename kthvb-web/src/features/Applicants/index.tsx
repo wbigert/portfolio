@@ -33,7 +33,6 @@ export default function Applicants({ appData, handleModals }: ApplicantsProps) {
 
     function getApplicantTeams(applicants: Applicant[]) {
         const teamsTemp: { [key: string]: Applicant[] } = {}
-        console.log("Number of applicants", applicants.length);
         
         applicants.forEach((applicant: Applicant) => {
             const applicantTeam = applicant["teamAppliedFor"] || "No team"
@@ -46,7 +45,6 @@ export default function Applicants({ appData, handleModals }: ApplicantsProps) {
 
             teamsTemp[applicantTeam].push(applicant)
         })
-        console.log(teamsTemp)
 
         return teamsTemp
     }
@@ -78,14 +76,11 @@ export default function Applicants({ appData, handleModals }: ApplicantsProps) {
 
     useEffect(() => {
         if (appData.applicants) {
-          console.log("Applicants", appData.applicants)
             const filteredApplicants = appData.applicants.filter((applicant) =>
                 (applicant.name || "").includes(search)
             )
-            console.log("Filtered applicants", filteredApplicants);
             
             const sortedApplicants = sortApplicants(filteredApplicants)
-            console.log("Sorted applicants", sortedApplicants)
             const applicantTeams = getApplicantTeams(sortedApplicants)
 
             setTeams(applicantTeams)

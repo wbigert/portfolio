@@ -1,4 +1,3 @@
-import { uploadImage } from '@/requests/api'
 import { useEffect, useRef, useState } from 'react'
 import { Button, FloatingLabel, Form, FormControl, Modal } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
@@ -69,37 +68,38 @@ export default function EditUser({ modal, data, appData, handleSubmit }: EditUse
   }
 
   async function handleChange(e: React.ChangeEvent<HTMLElement>) {
-    if (e.target instanceof HTMLInputElement) {
-      if (e.target.name === 'picture' && e.target.files !== null && e.target.files.length > 0) {
-        await uploadImage(e.target.files[0]).then(url => {
-          setFormData({ ...formData, info: { ...formData.info, picture: url } })
-        })
-        if (addFrontImageRef.current) {
-          addFrontImageRef.current.value = ''
-        }
-      } else {
-        const { name, value } = e.target;
-        if (Object.keys(formData.info).includes(name)) {
-          setFormData({ ...formData, info: { ...formData.info, [name]: value } });
-        } else {
-          setFormData({ ...formData, [name]: value });
-        }
-      }
-    } else if (e.target instanceof HTMLTextAreaElement) {
-      const { name, value } = e.target;
-      if (Object.keys(formData.info).includes(name)) {
-        setFormData({ ...formData, info: { ...formData.info, [name]: value } });
-      } else {
-        setFormData({ ...formData, [name]: value });
-      }
-    } else if (e.target instanceof HTMLSelectElement) {
-      const { name, value } = e.target;
-      if (name === 'role') {
-        setFormData({ ...formData, info: { ...formData.info, boardPosition: value as BoardPosition } });
-      } else {
-        setFormData({ ...formData, [name]: parseInt(value, 10) });
-      }
-    }
+    throw new Error('No API calls in tech demo!')
+    // if (e.target instanceof HTMLInputElement) {
+    //   if (e.target.name === 'picture' && e.target.files !== null && e.target.files.length > 0) {
+    //     await uploadImage(e.target.files[0]).then(url => {
+    //       setFormData({ ...formData, info: { ...formData.info, picture: url } })
+    //     })
+    //     if (addFrontImageRef.current) {
+    //       addFrontImageRef.current.value = ''
+    //     }
+    //   } else {
+    //     const { name, value } = e.target;
+    //     if (Object.keys(formData.info).includes(name)) {
+    //       setFormData({ ...formData, info: { ...formData.info, [name]: value } });
+    //     } else {
+    //       setFormData({ ...formData, [name]: value });
+    //     }
+    //   }
+    // } else if (e.target instanceof HTMLTextAreaElement) {
+    //   const { name, value } = e.target;
+    //   if (Object.keys(formData.info).includes(name)) {
+    //     setFormData({ ...formData, info: { ...formData.info, [name]: value } });
+    //   } else {
+    //     setFormData({ ...formData, [name]: value });
+    //   }
+    // } else if (e.target instanceof HTMLSelectElement) {
+    //   const { name, value } = e.target;
+    //   if (name === 'role') {
+    //     setFormData({ ...formData, info: { ...formData.info, boardPosition: value as BoardPosition } });
+    //   } else {
+    //     setFormData({ ...formData, [name]: parseInt(value, 10) });
+    //   }
+    // }
   }
 
   function checkboxChangeAction(value: string, check: boolean, array: string[]) {
@@ -236,7 +236,7 @@ export default function EditUser({ modal, data, appData, handleSubmit }: EditUse
             </div>
           )}
           <div className='mt-3 d-flex justify-content-end'>
-            <Button onClick={() => handleSubmit(formData)}>{data.user ? t('editUser.edit.submit') : t('editUser.create.submit')}</Button>
+            <Button className='studs-bg' onClick={() => handleSubmit(formData)}>{data.user ? t('editUser.edit.submit') : t('editUser.create.submit')}</Button>
           </div>
         </Form>
       </Modal.Body>

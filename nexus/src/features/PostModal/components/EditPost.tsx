@@ -1,10 +1,10 @@
-import { uploadImage } from '@/requests/api'
+// import { uploadImage } from '@/requests/api'
 import { useEffect, useRef, useState } from 'react'
 import { Alert, Button, FloatingLabel, Form, FormControl, Modal } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
 import { AddedImage } from './AddedImage.jsx'
-import { BlogPost, CreateBlogPost } from '@/models/BlogPost.js'
-import { CreateEventPost, EventPost } from '@/models/EventPost.js'
+import { BlogPost, BlogPostStringifiedAuthor } from '@/models/BlogPost.js'
+import { EventPost, EventPostStringifedAuthor } from '@/models/EventPost.js'
 import { AppData } from '@/models/AppData.js'
 import { ModalManager } from '@/models/Modal.js'
 
@@ -18,11 +18,11 @@ interface EditPostProps {
     type: 'blogPost' | 'eventPost'
   }
   appData: AppData,
-  handleSubmit: (formData: CreateEventPost | CreateBlogPost ) => void
+  handleSubmit: (formData: EventPostStringifedAuthor | BlogPostStringifiedAuthor ) => void
 }
 
 export default function EditPost ({ modal, data, appData, handleSubmit }: EditPostProps): JSX.Element {
-  const [formData, setFormData] = useState<CreateEventPost | CreateBlogPost >({
+  const [formData, setFormData] = useState<EventPostStringifedAuthor | BlogPostStringifiedAuthor >({
     id: '',
     title: '',
     description: '',
@@ -47,7 +47,7 @@ export default function EditPost ({ modal, data, appData, handleSubmit }: EditPo
       const highestStudsYear: number = Math.max(...appData.users.map(user => user.studsYear));
       const defaultAuthor = appData.users.find(user => user.id === appData.userDetails?.id) || appData.users.find(user => user.studsYear === highestStudsYear) || appData.users[0];
   
-      const newFormData: CreateEventPost | CreateBlogPost = {
+      const newFormData: EventPostStringifedAuthor | BlogPostStringifiedAuthor = {
         id: post.id || '',
         title: post.title || '',
         description: post.description || '',
@@ -73,69 +73,70 @@ export default function EditPost ({ modal, data, appData, handleSubmit }: EditPo
   }
 
   async function handleChange (e: React.ChangeEvent<HTMLElement>) {
-    if (e.target instanceof HTMLInputElement) {
-      switch (e.target.name) {
-        case 'pictures': {
-          if (e.target.files !== null) {
-            const urls: string[] = []
-            for (let i = 0; i < e.target.files.length; i++) {
-              const file = e.target.files[i]
-              await uploadImage(file).then(url => {
-                console.log('url: ', url)
-                urls.push(url)
-              })
-            }
-            console.log('urls: ', urls)
-            setFormData({ ...formData, pictures: [...formData.pictures, ...urls] })
-            if (addImagesRef.current) {
-              addImagesRef.current.value = ''
-            }
-          } 
-          break
-        }
-        case 'frontPicture':
-          if (e.target.files !== null && e.target.files.length > 0) {
-            await uploadImage(e.target.files[0]).then(url => {
-              setFormData({ ...formData, frontPicture: url })
-            })
-            if (addFrontImageRef.current) {
-              addFrontImageRef.current.value = ''
-            }
-          }
-          break
-        case 'title':
-          setFormData({ ...formData, title: e.target.value })
-          break
-        case 'published':
-          setFormData({ ...formData, published: e.target.checked })
-          break
-        default:
-          console.log('Unknown handleChange')
-          break
-      }
-    } else if (e.target instanceof HTMLTextAreaElement) {
-      switch (e.target.name) {
-        case 'description':
-          setFormData({ ...formData, description: e.target.value });
-          break;
-        default:
-          console.log('Unknown handleChange');
-          break;
-      }
-    } else if (e.target instanceof HTMLSelectElement) {
-      const target = e.target as HTMLSelectElement
-      switch (target.name) {
-        case 'author':
-          setFormData({ ...formData, author: target.value, studsYear: appData.users?.find(user => user.id === target.value)?.studsYear || 0 });
-          break;
-        case 'studsYear':
-          setFormData({ ...formData, studsYear: parseInt(target.value, 10) });
-          break;
-        default:
-          console.log('Unknown handleChange');
-          break;
-      }
-    }
+    throw new Error('No API calls in tech demo!')
+    // if (e.target instanceof HTMLInputElement) {
+    //   switch (e.target.name) {
+    //     case 'pictures': {
+    //       if (e.target.files !== null) {
+    //         const urls: string[] = []
+    //         for (let i = 0; i < e.target.files.length; i++) {
+    //           const file = e.target.files[i]
+    //           await uploadImage(file).then(url => {
+    //             console.log('url: ', url)
+    //             urls.push(url)
+    //           })
+    //         }
+    //         console.log('urls: ', urls)
+    //         setFormData({ ...formData, pictures: [...formData.pictures, ...urls] })
+    //         if (addImagesRef.current) {
+    //           addImagesRef.current.value = ''
+    //         }
+    //       } 
+    //       break
+    //     }
+    //     case 'frontPicture':
+    //       if (e.target.files !== null && e.target.files.length > 0) {
+    //         await uploadImage(e.target.files[0]).then(url => {
+    //           setFormData({ ...formData, frontPicture: url })
+    //         })
+    //         if (addFrontImageRef.current) {
+    //           addFrontImageRef.current.value = ''
+    //         }
+    //       }
+    //       break
+    //     case 'title':
+    //       setFormData({ ...formData, title: e.target.value })
+    //       break
+    //     case 'published':
+    //       setFormData({ ...formData, published: e.target.checked })
+    //       break
+    //     default:
+    //       console.log('Unknown handleChange')
+    //       break
+    //   }
+    // } else if (e.target instanceof HTMLTextAreaElement) {
+    //   switch (e.target.name) {
+    //     case 'description':
+    //       setFormData({ ...formData, description: e.target.value });
+    //       break;
+    //     default:
+    //       console.log('Unknown handleChange');
+    //       break;
+    //   }
+    // } else if (e.target instanceof HTMLSelectElement) {
+    //   const target = e.target as HTMLSelectElement
+    //   switch (target.name) {
+    //     case 'author':
+    //       setFormData({ ...formData, author: target.value, studsYear: appData.users?.find(user => user.id === target.value)?.studsYear || 0 });
+    //       break;
+    //     case 'studsYear':
+    //       setFormData({ ...formData, studsYear: parseInt(target.value, 10) });
+    //       break;
+    //     default:
+    //       console.log('Unknown handleChange');
+    //       break;
+    //   }
+    // }
   }
 
   if (!formData) {

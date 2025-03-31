@@ -74,9 +74,9 @@ export function GreatBritainFlag ({ size = '1.5em', className, fill, style }: Fl
 
 // For more languages, add more objects here
 export const flagAndCountry: Record<LanguageCode, Country> = {
-  sv: { icon: <SwedishFlag />, code: 'sv', text: 'Svenska' },
-  no: { icon: <NorwegianFlag />, code: 'no', text: 'Norsk' },
-  fi: { icon: <FinnishFlag />, code: 'fi', text: 'Suomalainen' },
+  // sv: { icon: <SwedishFlag />, code: 'sv', text: 'Svenska' }
+  // no: { icon: <NorwegianFlag />, code: 'no', text: 'Norsk' },
+  // fi: { icon: <FinnishFlag />, code: 'fi', text: 'Suomalainen' },
   en: { icon: <GreatBritainFlag />, code: 'en', text: 'English' },
-  de: { icon: <GermanFlag />, code: 'de', text: 'Deutsch' }
+  // de: { icon: <GermanFlag />, code: 'de', text: 'Deutsch' }
 }

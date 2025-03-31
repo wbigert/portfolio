@@ -29,14 +29,14 @@ export default function getDynamicYearGroupsInfo(appData: AppData, contentSource
   const contentData = assertDefined(sourceData, `appData.${contentSourceType}Posts is not defined`, `appData.${contentSourceType}Posts`);
   const includeUnpublished = loggedIn && (userDetails?.permissions?.includes(permissionKey) || userDetails?.permissions?.includes(Permission.Admin));
   const includedContent = (contentData || []).filter((e) => e.published || includeUnpublished);
-  const years = [...new Set(includedContent.map((e: BlogPost | EventPost) => e.kthYear))]
+  const years = [...new Set(includedContent.map((e: BlogPost | EventPost) => e.studsYear))]
     .filter(year => year !== 1970)
     .sort((a, b) => b - a);
 
   const newGroupsInfo: DynamicYearGroup[] = years.map((year) => ({ year, title: i18next.t(`${contentSourceType}.groupTitle`) + ' ' + year, elements: [] }));
 
   for (let i = 0; i < newGroupsInfo.length; i++) {
-    const matchedContent = includedContent.filter((e) => e.kthYear === newGroupsInfo[i].year);
+    const matchedContent = includedContent.filter((e) => e.studsYear === newGroupsInfo[i].year);
     newGroupsInfo[i].elements = matchedContent.map((e) => {
       return {
         id: e.id,
@@ -56,13 +56,13 @@ export default function getDynamicYearGroupsInfo(appData: AppData, contentSource
 function getContactElementGroupsInfo(appData: AppData, windowWidth: number): DynamicYearGroup[] {
   if (!appData.users) return [];
 
-  const years = [...new Set(appData.users.map((e) => e.kthYear))]
+  const years = [...new Set(appData.users.map((e) => e.studsYear))]
     .filter(year => year !== 1970)
     .sort((a, b) => b - a);
   const newGroupsInfo: DynamicYearGroup[] = years.map((year) => ({ year, title: i18next.t('about.groupTitle') + ' ' + year, elements: [], }));
 
   for (let i = 0; i < newGroupsInfo.length; i++) {
-    const matchedUsers = appData.users.filter((e) => e.kthYear === newGroupsInfo[i].year);
+    const matchedUsers = appData.users.filter((e) => e.studsYear === newGroupsInfo[i].year);
     newGroupsInfo[i].elements = matchedUsers.map((e) => {
       const element: ContactElement = {
         id: e.id,

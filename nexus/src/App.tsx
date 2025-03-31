@@ -17,14 +17,20 @@ import { AppData } from '@/models/AppData'
 import { InstructionArgs, InstructionData } from './models/Instruction'
 import WaveDivider from './components/WaveDivider'
 
+import { UsersSnapshot } from './requests/UsersSnapshot'
+import { BlogsSnapshot } from './requests/BlogsSnapshot'
+import { EventsSnapshot } from './requests/EventsSnapshot'
+import { UserDetailsSnapshot} from './requests/UserDetailsSnapshot'
 function App() {
   const [appData, setAppData] = useState<AppData>({
-    users: null,
-    blogPosts: null,
-    events: null,
-    loggedIn: localStorage.loggedIn || false,
-    userDetails: (localStorage.userDetails && JSON.parse(localStorage.userDetails)) || null,
-    didFetchCollections: false
+    users: UsersSnapshot,
+    blogPosts: BlogsSnapshot,
+    events: EventsSnapshot,
+    // loggedIn: localStorage.loggedIn || false,
+    loggedIn: true,
+    // userDetails: (localStorage.userDetails && JSON.parse(localStorage.userDetails)) || null,
+    userDetails: UserDetailsSnapshot,
+    didFetchCollections: true
   })
 
   useEffect(() => {

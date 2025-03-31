@@ -1,5 +1,4 @@
 import { LoginResponse } from "@/models/Login"
-import { User } from "@/models/User"
 
 export function setLoggedIn (response: LoginResponse) : void {
   localStorage.loggedIn = 'true'

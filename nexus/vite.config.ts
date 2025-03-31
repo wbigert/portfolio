@@ -32,27 +32,27 @@ export default defineConfig({
       //   changeOrigin: true
       // },
       '/graphql': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/signed-upload': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/login': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/forgot': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/reset': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/account/password': {
-        target: 'http://138.68.66.184',
+        target: 'https://wbigert.me',
         changeOrigin: true
       },
       '/uploads': {

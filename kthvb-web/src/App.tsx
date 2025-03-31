@@ -20,20 +20,23 @@ import Tryouts from './features/Tryouts'
 import { Button } from 'react-bootstrap'
 import Members from './features/Members'
 import useWebSocket from './hooks/useWebSocket'
-import { SOCKET_URL } from './requests/api'
+import { UsersSnapshot } from './requests/UsersSnapshot'
+import { ApplicantsSnapshot } from './requests/ApplicantsSnapshot'
+import { SettingsSnapshot } from './requests/SettingsSnapshot'
+import { UserDetailsSnapshot } from './requests/UserDetailsSnapshot'
 function App() {
-  const [messages, sendSocket, setSocketUrl] = useWebSocket(SOCKET_URL)
+  const [messages, sendSocket, setSocketUrl] = useWebSocket("...")
   const tryout_id = window.location.pathname.split('/')[2] || null
   const [appData, setAppData] = useState<AppData>({
-    users: null,
+    users: UsersSnapshot,
     blogPosts: null,
     events: null,
-    applicants: null,
-    settings: null,
+    applicants: ApplicantsSnapshot,
+    settings: SettingsSnapshot,
     tryout_id: tryout_id,
-    loggedIn: localStorage.loggedIn || false,
-    userDetails: (localStorage.userDetails && JSON.parse(localStorage.userDetails)) || null,
-    didFetchCollections: false
+    loggedIn: true,
+    userDetails: UserDetailsSnapshot,
+    didFetchCollections: true
   })
 
   const navigateTo = useNavigate()
