@@ -10,7 +10,7 @@ Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
 The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided on creating a new website using modern libraries such as **React 18.2** and **Vite 4.0.1**.
 
-## [KTH Volleyball Tryouts Assistance Tool](https://github.com/wbigert/portfolio/tree/main/kthvb-teamer) [Hobby Project for KTH Volleyball]
+## [KTH Volleyball Tryouts Assistance Tool](https://github.com/wbigert/portfolio/tree/main/kthvb-web) [Hobby Project for KTH Volleyball]
 Skills: **Python, TypeScript, React, MongoDB, WebSocket, CSS, HTML, Bootstrap**
 
 KTH Volleyball is the largest sports association of KTH and receives hundreds of applicants for their tryouts. Keeping track of every applicant's performance during tryouts and mentally associating their names and numbers with faces is incredibly difficult. To solve this problem, I developed a fullstack application that allows KTH Volleyball members to easily manage applicants and to identify them and give them feedback on their performance live as they play. The feedback is automatically compiled and available for captains and board members to review in order to make fair decisions about what applicants to proceed with every semester.
