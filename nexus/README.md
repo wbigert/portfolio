@@ -5,33 +5,18 @@ Skills: **React, TypeScript, CSS, HTML, Bootstrap**
 
 The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided to create a new website from scratch\* using modern libraries such as **React 18.2** and **Vite 4.0.1**. I used TypeScript and Bootstrap to ensure that future generations of Studs would have an easy time understanding the project.
 
-\* *The api.js file containing graphql queries was reused and refurbished from a different project. The same goes for the useModalManager.ts hook.*
+\* *The useModalManager.ts hook was reused and refurbished from a different project.*
 
-You can check out <https://studs.se> which is the same website with additions/modifications/improvements made by next year's Studs members.
-
-For the Studs repo, see <https://github.com/studieresan/nexus>.
-
-Below are demos of the website as of 2025-03-25. The demo differ slightly from how it looked when I left studs. The color scheme is different, the front page graphic has been changed, the section breaker graphic is different, and the Studs logo is new. However, everything else (from what I can tell) is still the same, and 86% of the project contributions were still made by me.
-
-## Demo: Website Outsider Perspective (2025-03-25)
-
-https://github.com/user-attachments/assets/fdd77a3c-3aef-414b-ab1b-e3b008f12abe
-
-https://github.com/user-attachments/assets/fe184533-7990-49e3-b8fd-0d9f02975e58
-
-## Demo: Responsiveness (2025-03-25)
-https://github.com/user-attachments/assets/1b79ffac-a1c7-4375-a48a-48231eb254b9
-
-https://github.com/user-attachments/assets/6e1402fa-fe65-4bfd-970b-9abb45a32204
+Please navigate to [https://nexus.wbigert.com](https://nexus.wbigert.com) for a tech demo of the website. The tech demo is a snapshot of the project from when I was still the sole contributor, and loads a statically saved snapshot of the database from that time, so API calls are disabled. You will navigate the demo from the perspective of an Administrator and will able to explore how it would look like to edit blogs, events, and users.
 
 ## Ease of Use
-I implemented an intuitive GUI for administrators to add/edit/remove members, events, and blog posts (not shown in demo however, since I don't have Admin access anymore after being off-boarded). Users are given roles that automatically link their portraits to the appropriate parts of the webpage. For example, group managers automatically appear on the studs.se/groups page, making it easy for future Studs years to just add the new members, assign them their respective roles, and have the website automatically update accordingly without having to change much manually.
+I implemented an intuitive GUI for administrators to add/edit/remove members, events, and blog posts. Users are given roles that automatically link their portraits to the appropriate parts of the webpage. For example, group managers automatically appear on the studs.se/groups page, making it easy for future Studs years to just add the new members, assign them their respective roles, and have the website automatically update accordingly without having to change much manually.
 
 ## Design
 After I implemented the core functionality of the website and proposed an initial design, the UX-designers of Studs 2023 improved it in Figma by giving the **Logo**, **Home page**, **Navbar**, **Footer**, **Buttons** and **Login page** a more personalized design, alongside other design improvements. I then implemented this new design and made responsive versions of it.
 
 ## API
-I used the Studs Overlord backend API which was built by other Studs members from previous generations. While most of the core of the backend remains untouched, I refurbished the GraphQL queries and database models quite a bit to streamline Events and BlogPosts into having the same attributes. I also removed a lot of unused/unnecessary code.
+I used the Studs Overlord backend API in the original project which was built by other Studs members from previous generations. While most of the core of the backend remains untouched, I refurbished the GraphQL queries and database models quite a bit to streamline Events and BlogPosts into having the same attributes. I also removed a lot of unused/unnecessary code.
 
 ## Features
 - The website supports viewing, creation, editing, and deletion of users, events, and blog posts
