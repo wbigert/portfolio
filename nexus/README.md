@@ -7,7 +7,7 @@ The new Studs website as of 2023. As member of IT in KTH Studs 2023, I decided t
 
 \* *The useModalManager.ts hook was reused and refurbished from a different project.*
 
-Please navigate to [https://nexus.wbigert.com](https://nexus.wbigert.com) for a tech demo of the website. The tech demo is a snapshot of the project from when I was still the sole contributor, and loads a statically saved snapshot of the database from that time, so API calls are disabled. You will navigate the demo from the perspective of an Administrator and will able to explore how it would look like to edit blogs, events, and users.
+Please navigate to [https://nexus.wbigert.com](https://nexus.wbigert.com) for a tech demo of the website. The tech demo is a snapshot of the project from when I was still the sole contributor. Most images are replaced with static randomized stock images of clouds that I like. You will navigate the demo from the perspective of an Administrator and will able to explore how it would look like to edit blogs, events, and users.
 
 ## Ease of Use
 I implemented an intuitive GUI for administrators to add/edit/remove members, events, and blog posts. Users are given roles that automatically link their portraits to the appropriate parts of the webpage. For example, group managers automatically appear on the studs.se/groups page, making it easy for future Studs years to just add the new members, assign them their respective roles, and have the website automatically update accordingly without having to change much manually.
